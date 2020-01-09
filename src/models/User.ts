@@ -38,9 +38,8 @@ class User implements UserInterface{
         if(body.teamingId !== undefined || body.teamingId !== null){
             this.teamingId = body.teamingId;
         }
-        
-        console.log("success");
+
     }
-}
+};
 
 export = User;
