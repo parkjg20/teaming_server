@@ -20,12 +20,16 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http); 
 
 
-
 app.use(bodyParser.json());
 
 app.use("/teaming", teamingRouter);
 app.use("/riot", riotRouter);
 
+
+declare namespace APP{
+    const _APP_KEY = 'RGAPI-f4a5b0f6-1133-4687-8999-8b349557e632';
+
+} 
 
 io.on("connection", function(socket: any):void{
     console.log("a user connected : ", socket.id);

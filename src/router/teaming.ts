@@ -5,7 +5,6 @@ const router = express.Router();
 
 router.post('/register', (req: Request, res: Response, next: NextFunction)=>{
     
-    const user: User = new User(req.body);
     res.send("success router");
 })
 
