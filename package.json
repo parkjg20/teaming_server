@@ -23,11 +23,13 @@
   },
   "dependencies": {
     "@types/body-parser": "^1.17.1",
+    "@types/request-promise-native": "^1.0.17",
     "@types/socket.io": "^2.1.4",
     "body-parser": "^1.19.0",
     "mysql": "^2.17.1",
     "reflect-metadata": "^0.1.13",
     "request": "^2.88.0",
+    "request-promise-native": "^1.0.8",
     "socket.io": "^2.3.0",
     "typeorm": "^0.2.21",
     "xmlhttprequest": "^1.8.0"

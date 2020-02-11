@@ -1,4 +1,12 @@
 class User{
+    private _error: string | undefined;
+    public get error(): string | undefined {
+        return this._error;
+    }
+    public set error(value: string | undefined) {
+        this._error = value;
+    }
+
     private _userNo: number | undefined;
     public get userNo(): number | undefined {
         return this._userNo;
@@ -45,6 +53,30 @@ class User{
     }
     public set riotAccountId(value: string | undefined) {
         this._riotAccountId = value;
+    }
+
+    private _puuid: string | undefined;
+    public get puuid(): string | undefined {
+        return this._puuid;
+    }
+    public set puuid(value: string | undefined) {
+        this._puuid = value;
+    }
+
+    private _level: number | undefined;
+    public get level(): number | undefined {
+        return this._level;
+    }
+    public set level(value: number | undefined) {
+        this._level = value;
+    }
+
+    private _profileIcon: number | undefined;
+    public get profileIcon(): number | undefined {
+        return this._profileIcon;
+    }
+    public set profileIcon(value: number | undefined) {
+        this._profileIcon = value;
     }
 
     private _introduct: string | undefined;
